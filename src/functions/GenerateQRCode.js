@@ -10,7 +10,7 @@ app.http('GenerateQRCode', {
 
         return { body: `Hello, ${name}!` };
 
-        
+
     }
 });
 
