@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -10,7 +9,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`https://qr-code-generator1.azurewebsites.net/api/GenerateQRCode?url=`+ url);
+      const response = await axios.get(`https://qr-code-generator7.azurewebsites.net/api/GenerateQRCode?url=`+ url);
       setQrCodeUrl(response.data.qr_code_url);
     } catch (error) {
       console.error('Error generating QR Code:', error);
